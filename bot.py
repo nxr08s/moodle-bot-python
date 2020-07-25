@@ -6,9 +6,11 @@ import datetime
 logfile = 'log.log'
 
 url = 'https://moodle.kubsu.ru/report/usersessions/user.php'
+
+# copy cookie from browser and insert as Cookie's value (to not bother with authorization)
 headers = {
 	'Accept':'text/html',
-	'Cookie':'SSESS793f6acd2def245c1081d4d3a4cdf6fc=X8cwF6iiO2yAVP5CFSvL9g1O_rKbvCtOKuUBgpX7q6A; MoodleSession=r18t4iobuur67r13j7m4reurm8',
+	'Cookie':'',
 	'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36'
 }
 
